@@ -17,6 +17,9 @@ tool = [
     "ipython>=9.6.0",
 ]
 
+[tool.ruff]
+line-length = 88
+
 [tool.ruff.lint]
 select = [
     "E",  # pycodestyle errors

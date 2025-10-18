@@ -4,6 +4,7 @@ import uuid
 from collections.abc import Generator
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
+from pathlib import Path
 
 import bs4
 import icalendar as ical
@@ -73,8 +74,8 @@ def get_event_key(event: ical.Event) -> tuple[str, date | datetime]:
 
 
 def main():
-    with open("docs/utahiro.ics", encoding="utf-8") as f:
-        cal: ical.Calendar = ical.Calendar.from_ical(f.read())
+    ics_path = Path("docs/calendar.ics")
+    cal: ical.Calendar = ical.Calendar.from_ical(ics_path.read_text(encoding="utf-8"))
 
     event_set = set(map(get_event_key, cal.events))
 
@@ -99,8 +100,7 @@ def main():
             cal.add_component(event)
             event_set.add(key)
 
-    with open("docs/utahiro.ics", "wb") as f:
-        f.write(cal.to_ical())
+    ics_path.write_bytes(cal.to_ical())
 
 
 if __name__ == "__main__":
