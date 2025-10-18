@@ -1,9 +1,24 @@
 BEGIN:VCALENDAR
-PRODID:-//kairi003//utahiro-calendar//JP
 VERSION:2.0
+PRODID:-//kairi003//utahiro-calendar//JP
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+X-WR-CALDESC:ウタヒロ室料半額DAYカレンダー\nhttps://github.co
+ m/kairi003/utahiro-calendar
 X-WR-CALNAME:ウタヒロ室料半額DAY
 X-WR-TIMEZONE:Asia/Tokyo
-X-WR-CALDESC:ウタヒロ室料半額DAYカレンダー\nhttps://github.com/kairi003/utahiro-calendar
+BEGIN:VEVENT
+SUMMARY:ウタヒロ室料半額DAY
+DTSTART;VALUE=DATE:20251014
+DTEND;VALUE=DATE:20251015
+DTSTAMP:20251018T174901Z
+UID:3601910b-76e0-42f3-aab0-2457614f61df
+DESCRIPTION:【10月14日(火)は全店カラオケ室料半額DAY】  ウ
+ タヒロは室料にドリンク飲み放題付きだからとっても
+ お得🤗👛アプリ会員様限定のイベントなので、ご来店
+ 前にウタヒロアプリの会員登録をお願いいたします🙏 
+ pic.x.com/ypWZJmQeaU
+LOCATION:https://x.com/nico_utahiro/status/1975033268723421603?utm_source=
+ yjrealtime&utm_medium=search
+END:VEVENT
 END:VCALENDAR
