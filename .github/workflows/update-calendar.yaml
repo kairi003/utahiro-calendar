@@ -1,4 +1,4 @@
-name: Update Calendar
+name: update-calendar
 
 on:
   schedule:
