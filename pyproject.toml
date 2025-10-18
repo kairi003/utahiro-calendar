@@ -1,0 +1,29 @@
+[project]
+name = "utahiro-calendar"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "icalendar>=6.3.1",
+    "lxml>=6.0.2",
+    "requests>=2.32.4",
+]
+
+[dependency-groups]
+dev = []
+tool = [
+    "ipython>=9.6.0",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]

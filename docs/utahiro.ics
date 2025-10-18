@@ -1,0 +1,9 @@
+BEGIN:VCALENDAR
+PRODID:-//kairi003//utahiro-calendar//JP
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ウタヒロ室料半額DAY
+X-WR-TIMEZONE:Asia/Tokyo
+X-WR-CALDESC:ウタヒロ室料半額DAYカレンダー\nhttps://github.com/kairi003/utahiro-calendar
+END:VCALENDAR
