@@ -27,7 +27,10 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          if git commit -m 'Update calendar data'; then
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update calendar data'
             git push
           else
             echo "No changes to commit"
