@@ -7,4 +7,4 @@ X (旧Twitter) で [@nico_utahiro](https://x.com/nico_utahiro) から毎月発�
 ![demo](https://github.com/user-attachments/assets/613d9069-4309-43bc-8751-e96903acfab9)
 
 ## 使い方
-[https://kairi003.github.io/utahiro-calendar/calendar.ics](https://kairi003.github.io/utahiro-calendar/calendar.ics) をiCalendar形式のカレンダー (ical/ics) としてGoogleカレンダーなどに追加してください。
+[https://kairi003.github.io/utahiro-calendar/utahiro.ics](https://kairi003.github.io/utahiro-calendar/utahiro.ics) をiCalendar形式のカレンダー (ical/ics) としてGoogleカレンダーなどに追加してください。
