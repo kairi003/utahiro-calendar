@@ -7,8 +7,8 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 import bs4
-import icalendar as ical
 import requests
+from icalendar import Calendar, Event
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -69,13 +69,13 @@ def get_event_date(tweet: Tweet) -> date:
     return date(year, month, day)
 
 
-def get_event_key(event: ical.Event) -> tuple[str, date | datetime]:
+def get_event_key(event: Event) -> tuple[str, date | datetime]:
     return str(event.get("SUMMARY")), event.start
 
 
 def main():
     ics_path = Path("docs/utahiro.ics")
-    cal: ical.Calendar = ical.Calendar.from_ical(ics_path.read_text(encoding="utf-8"))
+    cal: Calendar = Calendar.from_ical(ics_path.read_text(encoding="utf-8"))
 
     event_set = set(map(get_event_key, cal.events))
 
@@ -86,15 +86,15 @@ def main():
             logger.warning(f"Failed to get event date: {e}", exc_info=True)
             continue
 
-        event = ical.Event()
-        event.add("SUMMARY", "ウタヒロ室料半額DAY")
-        event.add("DTSTART", event_date)
-        event.add("DTEND", event_date + timedelta(days=1))
-        event.add("DTSTAMP", datetime.now())
-        event.add("UID", uuid.uuid4())
-        event.add("DESCRIPTION", tweet.text)
-        event.add("LOCATION", tweet.url)
-
+        event = Event.new(
+            description=tweet.text,
+            end=event_date + timedelta(days=1),
+            location=tweet.url,
+            stamp=datetime.now(),
+            start=event_date,
+            summary="ウタヒロ室料半額DAY",
+            uid=uuid.uuid4(),
+        )
         key = get_event_key(event)
         if key not in event_set:
             cal.add_component(event)
