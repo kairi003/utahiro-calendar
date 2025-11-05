@@ -23,7 +23,7 @@ jobs:
         run: uv sync --locked --no-dev
       
       - name: Run the update script
-        run: uv run main.py && git add docs/calendar.ics
+        run: uv run main.py && git add docs/utahiro.ics
 
       - name: Commit and push changes
         run: |

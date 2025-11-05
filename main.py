@@ -74,7 +74,7 @@ def get_event_key(event: ical.Event) -> tuple[str, date | datetime]:
 
 
 def main():
-    ics_path = Path("docs/calendar.ics")
+    ics_path = Path("docs/utahiro.ics")
     cal: ical.Calendar = ical.Calendar.from_ical(ics_path.read_text(encoding="utf-8"))
 
     event_set = set(map(get_event_key, cal.events))
