@@ -35,4 +35,18 @@ DESCRIPTION:【11月12日(水)は全店室料半額DAY】  ウタヒロは
 LOCATION:https://x.com/nico_utahiro/status/1985889806552089071?utm_source=
  yjrealtime&utm_medium=search
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ウタヒロ室料半額DAY
+DTSTART;VALUE=DATE:20251201
+DTEND;VALUE=DATE:20251202
+DTSTAMP:20251124T040246Z
+UID:ff2d4202-c9f1-4a58-b4ea-838e6a77ac30
+DESCRIPTION:12月1日(月)は全店室料半額DAY ═══════
+ ════════ ウタヒロは室料にドリンク飲み放題
+ 付きだからとってもお得🤗 アプリ会員様限定のイベン
+ トなので、 ご来店前にウタヒロアプリの会員登録をお
+ 願いいたします🎤 pic.x.com/DuL3ZudS7E
+LOCATION:https://x.com/nico_utahiro/status/1992790285743698236?utm_source=
+ yjrealtime&utm_medium=search
+END:VEVENT
 END:VCALENDAR
