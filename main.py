@@ -13,7 +13,7 @@ from icalendar import Calendar, Event
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-SEARCH_URL = "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=t&p=id%3Anico_utahiro+室料半額DAY"
+SEARCH_URL = "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=t&p=id%3Anico_utahiro+室料半額"
 
 
 @dataclass
@@ -58,7 +58,8 @@ def fetch_tweets() -> Generator[Tweet]:
 
 
 def get_event_date(tweet: Tweet) -> date:
-    m = re.search(r"(\d{1,2})月(\d{1,2})日.*室料半額DAY", tweet.text)
+    print(tweet.text)
+    m = re.search(r"(\d{1,2})月(\d{1,2})日.*室料半額", tweet.text)
     if not m:
         raise ValueError("Date not found in tweet text")
     month = int(m.group(1))
