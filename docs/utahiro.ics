@@ -208,4 +208,18 @@ DESCRIPTION:＼10月14日(水)は室料半額DAY ／  室料半額なう
 LOCATION:https://x.com/nico_utahiro/status/2107667227247849541?utm_source=
  yjrealtime&utm_medium=search
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ウタヒロ室料半額DAY
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+DTSTAMP:20261125T094814Z
+UID:8e36a6ea-733f-47ae-8ac4-e5e6f8e84389
+DESCRIPTION:12月1日（火）は、月に一度の【室料半額DAY】
+ 🎤 公式アプリ会員証のご提示で、室料が【50％OFF】に
+ なります！もちろんソフトドリンク飲み放題付き🥤 ぜ
+ ひアプリの事前ダウンロードをお願いします🙌 utahiro.c
+ om/app/ #ウタヒロ #室料半額DAY pic.x.com/wDwYGIscjC
+LOCATION:https://x.com/nico_utahiro/status/2125424232700018873?utm_source=
+ yjrealtime&utm_medium=search
+END:VEVENT
 END:VCALENDAR
